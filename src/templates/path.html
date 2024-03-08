@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>Points saver - Path</title>
+</head>
+
+<body>
+    <h1>Caminho {{path.id}}</h1>
+    <h2>{{ path.name }}</h2>
+    <table>
+        <tr>
+            <th>X</th>
+            <th>Y</th>
+            <th>Z</th>
+            <th>R</th>
+        </tr>
+        {% for point in path.points %}
+        <tr>
+            <td>{{ point.x }}</td>
+            <td>{{ point.y }}</td>
+            <td>{{ point.z }}</td>
+            <td>{{ point.r }}</td>
+        </tr>
+        {% endfor %}
+
+
+</html>

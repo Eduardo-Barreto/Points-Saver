@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Points saver - Update point</title>
+</head>
+
+<body>
+    <form action="/update_path/{{ path.id }}" method="post">
+        <input type="text" name="name" value="{{ path.name }}">
+        <input type="text" name="points" value="{{ path.points }}">
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+</html>

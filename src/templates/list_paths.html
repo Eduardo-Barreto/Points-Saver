@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Points saver - Paths</title>
+</head>
+
+<body>
+    <h1>Caminhos</h1>
+    <ul>
+        {% for path in paths %}
+        <li>
+            <a href="/pegar_caminho/{{ path.id }}">{{ path.id }} - {{ path.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
